@@ -1,0 +1,403 @@
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.6.1                 2017-12-12         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from ../MG5_aMC_v2_6_0/input/mg5_configuration.txt 
+set collier to /local/scratch/MG5_aMC_v2_6_0/HEPTools/lib
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+set lhapdf to /local/scratch/MG5_aMC_v2_6_0/HEPTools/lhapdf6/bin/lhapdf-config
+set ninja to /local/scratch/MG5_aMC_v2_6_0/HEPTools/lib
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /local/scratch/tuZsamples/run_param
+The import format was not given, so we guess it as command
+launch tuZ_production_tzj
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.6.1                 2017-12-12         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /local/scratch/tuZsamples/tuZ_production_tzj/Cards/me5_configuration.txt  
+INFO: load configuration from /local/scratch/MG5_aMC_v2_6_0/input/mg5_configuration.txt  
+INFO: load configuration from /local/scratch/tuZsamples/tuZ_production_tzj/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+generate_events run_01
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [32mPythia8[0m           |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [32mExRoot[0m            |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=OFF' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [32mPythia8[0m           |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [31mOFF[0m               |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=OFF' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [32mPythia8[0m           |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [31mOFF[0m               |
+| 4. Decay onshell particles                   [1m madspin[0m = [32mON[0m                |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=OFF' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [32mPythia8[0m           |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [31mOFF[0m               |
+| 4. Decay onshell particles                   [1m madspin[0m = [32mON[0m                |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=OFF' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+[1;60mThe answer to the previous question is not set in your input file[0m
+[1;60mUse EOF value[0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param   : [32mparam_card.dat[0m                               |
+|  [31m2[0m. run     : [32mrun_card.dat[0m                                 |
+|  [31m3[0m. pythia8 : [32mpythia8_card.dat[0m                             |
+|  [31m4[0m. madspin : [32mmadspin_card.dat[0m                             |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, 3, pythia8, 4, enter path, ... ]
+[1;60mThe answer to the previous question is not set in your input file[0m
+[1;60mUse 0 value[0m
+INFO: Update the dependent parameter of the param_card.dat 
+Generating 50000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 21
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO:     P3_gq_tzg  
+INFO:     P4_gq_txzg  
+INFO:     P3_gg_tzq  
+INFO:     P4_gg_txzq  
+INFO:     P3_qq_tzq  
+INFO:     P4_qq_txzq  
+INFO:     P1_gq_tz  
+INFO:     P2_gq_txz  
+INFO:  Idle: 0,  Running: 1,  Completed: 21 [ current time: 12h38 ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 22 [  0.52s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 22 [  0.52s  ] 
+INFO: End survey 
+refine 50000
+Creating Jobs
+INFO: Refine results to 50000 
+INFO: Generating 50000.0 unweigthed events. 
+INFO: Effective Luminosity 88598.0809794 pb^-1 
+INFO: need to improve 18 channels 
+Current estimate of cross-section: 0.677215571 +- 0.00438921877573
+    P3_gq_tzg 
+    P4_gq_txzg 
+    P3_gg_tzq 
+    P4_gg_txzq 
+    P3_qq_tzq 
+    P4_qq_txzq 
+    P1_gq_tz 
+    P2_gq_txz 
+INFO:  Idle: 64,  Running: 4,  Completed: 0 [ current time: 12h38 ] 
+INFO:  Idle: 62,  Running: 4,  Completed: 2 [  0.66s  ] 
+INFO:  Idle: 55,  Running: 4,  Completed: 9 [  5.4s  ] 
+INFO:  Idle: 52,  Running: 4,  Completed: 12 [  9.3s  ] 
+INFO:  Idle: 48,  Running: 4,  Completed: 16 [  13.2s  ] 
+INFO:  Idle: 41,  Running: 4,  Completed: 23 [  17.3s  ] 
+INFO:  Idle: 38,  Running: 4,  Completed: 26 [  20.4s  ] 
+INFO:  Idle: 32,  Running: 4,  Completed: 32 [  23.4s  ] 
+INFO:  Idle: 21,  Running: 4,  Completed: 43 [  26.8s  ] 
+INFO:  Idle: 4,  Running: 4,  Completed: 60 [  29.8s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 68 [  30.8s  ] 
+INFO: Combining runs 
+INFO: finish refine 
+refine 50000
+Creating Jobs
+INFO: Refine results to 50000 
+INFO: Generating 50000.0 unweigthed events. 
+INFO: Effective Luminosity 88620.9292643 pb^-1 
+INFO: need to improve 0 channels 
+Current estimate of cross-section: 0.677040971 +- 0.000823627365585
+    P3_gq_tzg 
+    P4_gq_txzg 
+    P3_gg_tzq 
+    P4_gg_txzq 
+    P3_qq_tzq 
+    P4_qq_txzq 
+    P1_gq_tz 
+    P2_gq_txz 
+INFO:  Idle: 0,  Running: 0,  Completed: 0 [ current time: 12h39 ] 
+INFO: Combining runs 
+INFO: finish refine 
+INFO: Combining Events 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   0.677 +- 0.0008236 pb
+     Nb of events :  50000
+ 
+INFO: Running Systematics computation 
+INFO:  Idle: 4,  Running: 0,  Completed: 0 [ current time: 12h40 ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 1 [  1m 45s  ] 
+INFO: # events generated with PDF: NNPDF23_lo_as_0130_qed (247000) 
+INFO: #Will Compute 235 weights per event. 
+INFO: #***************************************************************************
+#
+# original cross-section: 0.677000350791
+#     scale variation: +24.8% -18%
+#     emission scale variation: +8.9% -26.9%
+#     central scheme variation: + 0% -17.3%
+# PDF variation: +1.45% -1.45%
+#
+# dynamical scheme # 1 : 0.609899 +23.6% -17.3% # \sum ET
+# dynamical scheme # 2 : 0.586152 +23.6% -17.3% # \sum\sqrt{m^2+pt^2}
+# dynamical scheme # 3 : 0.666134 +24.4% -17.8% # 0.5 \sum\sqrt{m^2+pt^2}
+# dynamical scheme # 4 : 0.559683 +23% -17% # \sqrt{\hat s}
+#***************************************************************************
+ 
+INFO: End of systematics computation 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: Running MadSpin 
+INFO: This functionality allows for the decay of resonances 
+INFO: in a .lhe file, keeping track of the spin correlation effets. 
+INFO: BE AWARE OF THE CURRENT LIMITATIONS: 
+INFO:   (1) Only a succession of 2 body decay are currently allowed 
+************************************************************
+*                                                          *
+*           W E L C O M E  to  M A D S P I N               *
+*                                                          *
+************************************************************
+INFO: Extracting the banner ... 
+INFO: process: p p > t z  
+INFO: options: $$ t~ 
+INFO: detected model: TopFCNC-onlyZ. Loading... 
+set max_weight_ps_point 400  # number of PS to estimate the maximum for each event
+decay t > w+ b, w+ > l+ vl
+decay t~ > w- b~, w- > l- vl~
+decay w+ > all all
+decay w- > all all
+decay z > l+ l-
+launch
+INFO: Will use seed 375625766 
+INFO: We need to recalculate the branching fractions for t~,w-,z,w+,t 
+INFO: Using MadWidth (arXiv:1402.1178) 
+INFO: Restrict model /local/scratch/MG5_aMC_v2_6_0/models/TopFCNC with file ../MG5_aMC_v2_6_0/models/TopFCNC/restrict_onlyZ.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO:    
+INFO: decay channels for t~ : ( width = 1.4805 GeV ) 
+INFO:        BR                 d1  d2 
+INFO:    1.000000e+00            b~  w-  
+INFO:    
+INFO:    
+INFO: decay channels for w- : ( width = 2.046556 GeV ) 
+INFO:        BR                 d1  d2 
+INFO:    3.333161e-01            d  u~  
+INFO:    3.333161e-01            s  c~  
+INFO:    1.111086e-01            e-  ve~  
+INFO:    1.111086e-01            mu-  vm~  
+INFO:    1.111086e-01            ta-  vt~  
+INFO:    4.199397e-05            b  u~  
+INFO:    
+INFO:    
+INFO: decay channels for z : ( width = 2.44476 GeV ) 
+INFO:        BR                 d1  d2 
+INFO:    1.520940e-01            d~  d  
+INFO:    1.520940e-01            s~  s  
+INFO:    1.520940e-01            b~  b  
+INFO:    1.185822e-01            u~  u  
+INFO:    1.185822e-01            c~  c  
+INFO:    6.785124e-02            ve~  ve  
+INFO:    6.785124e-02            vm~  vm  
+INFO:    6.785124e-02            vt~  vt  
+INFO:    3.433330e-02            e+  e-  
+INFO:    3.433330e-02            mu+  mu-  
+INFO:    3.433330e-02            ta+  ta-  
+INFO:    
+INFO:    
+INFO: decay channels for w+ : ( width = 2.046556 GeV ) 
+INFO:        BR                 d1  d2 
+INFO:    3.333161e-01            d~  u  
+INFO:    3.333161e-01            s~  c  
+INFO:    1.111086e-01            e+  ve  
+INFO:    1.111086e-01            mu+  vm  
+INFO:    1.111086e-01            ta+  vt  
+INFO:    4.199397e-05            b~  u  
+INFO:    
+INFO:    
+INFO: decay channels for t : ( width = 1.4805 GeV ) 
+INFO:        BR                 d1  d2 
+INFO:    1.000000e+00            b  w+  
+INFO:    
+INFO: generating the production square matrix element 
+INFO: generate p p > t z $$ t~; add process p p > t~ z $$ t; add process p p > t z j $$ t~; add process p p > t~ z j $$ t;  
+INFO: Done 3.69 
+INFO: generating the full matrix element squared (with decay) 
+INFO: generate p p > t z $$ t~, (t~ > b~ w- , w- > l- vl~  QCD=99), z > l+ l-  QCD=99, (t > b w+ , w+ > l+ vl  QCD=99)   --no_warning=duplicate;add process p p > t~ z $$ t, (t~ > b~ w- , w- > l- vl~  QCD=99), z > l+ l-  QCD=99, (t > b w+ , w+ > l+ vl  QCD=99)   --no_warning=duplicate;add process p p > t z j $$ t~, (t~ > b~ w- , w- > l- vl~  QCD=99), z > l+ l-  QCD=99, (t > b w+ , w+ > l+ vl  QCD=99)   --no_warning=duplicate;add process p p > t~ z j $$ t, (t~ > b~ w- , w- > l- vl~  QCD=99), z > l+ l-  QCD=99, (t > b w+ , w+ > l+ vl  QCD=99)   --no_warning=duplicate; 
+INFO: Done 5.58 
+INFO: generate matrix element for decay only (1 - > N). 
+INFO: output standalone_msF /local/scratch/tuZsamples/tuZ_production_tzj/decay_me 
+INFO: Done 0.8525 
+INFO: Compiling code 
+INFO: detect independant decays 
+INFO: Done in 0.0940549373627s 
+INFO:    
+INFO:    Estimating the maximum weight     
+INFO:    *****************************     
+INFO:      Probing the first 110 events 
+INFO:      with 400 phase space points 
+INFO:      For 2 decaying particle type in the final states 
+INFO:    
+INFO: No independent decay for one type of final states -> skip those events for the maximum weight computation 
+INFO: Event 111/220 :  0.034s   
+INFO: Event 116/220 :  0.21s   
+INFO: Event 121/220 :  0.44s   
+INFO: Event 126/220 :  0.66s   
+INFO: Event 131/220 :  0.87s   
+INFO: Event 136/220 :  1.1s   
+INFO: Event 141/220 :  1.4s   
+INFO: Event 146/220 :  1.6s   
+INFO: Event 151/220 :  1.9s   
+INFO: Event 156/220 :  2.1s   
+INFO: Event 161/220 :  2.2s   
+INFO: Event 166/220 :  2.5s   
+INFO: Event 171/220 :  2.7s   
+INFO: Event 176/220 :  3s   
+INFO: Event 181/220 :  3.2s   
+INFO: Event 186/220 :  3.4s   
+INFO: Event 191/220 :  3.7s   
+INFO: Event 196/220 :  3.9s   
+INFO: Event 201/220 :  4.2s   
+INFO: Event 206/220 :  4.4s   
+INFO: Event 211/220 :  4.7s   
+INFO: Event 216/220 :  4.9s   
+INFO:   
+INFO: Decaying the events...  
+INFO: Event nb 1000  2.9s  
+INFO: Event nb 2000  5.2s  
+INFO: Event nb 3000  7.4s  
+INFO: Event nb 4000  9.6s  
+INFO: Event nb 5000  11.8s  
+INFO: Event nb 6000  13.8s  
+INFO: Event nb 7000  15.9s  
+INFO: Event nb 8000  18s  
+INFO: Event nb 9000  20.1s  
+INFO: Event nb 10000  22.1s  
+INFO: reducing number of print status. Next status update in 10000 events 
+INFO: Event nb 20000  42.5s  
+INFO: Event nb 30000  1m 2s  
+INFO: Event nb 40000  1m 23s  
+INFO: Total number of events written: 50000/50000  
+INFO: Average number of trial points per production event: 10.07724 
+INFO: Branching ratio to allowed decays: 0.0152589 
+INFO: Number of events with weights larger than max_weight: 0 
+INFO: Number of subprocesses 35 
+INFO: Number of failures when restoring the Monte Carlo masses: 0  
+INFO: Decayed events have been written in /local/scratch/tuZsamples/tuZ_production_tzj/Events/run_01/unweighted_events_decayed.lhe.gz 
+INFO: The decayed event file has been moved to the following location:  
+INFO: /local/scratch/tuZsamples/tuZ_production_tzj/Events/run_01_decayed_1/unweighted_events.lhe.gz 
+INFO: MadSpin Done 
+INFO: [92mRunning Pythia8 [arXiv:1410.3012][0m 
+No user-defined value for Pythia8 parameter 'JetMatching:nJetMax'. Setting it automatically to 1.
+Splitting .lhe event file for PY8 parallelization...
+Submitting Pythia8 jobs...
+Pythia8 shower jobs: 0 Idle, 4 Running, 0 Done [1m41s]
+Pythia8 shower jobs: 0 Idle, 0 Running, 4 Done [23m46s]
+Merging results from the split PY8 runs...
+INFO: Create matching plots for Pythia8 
+INFO: Pythia8 shower finished after 32m22s. 
+INFO: No delphes_card detected, so not run Delphes 
+  === Results Summary for run: run_01_decayed_1 tag: tag_1 ===
+
+     Cross-section :   0.01033 +- 1.257e-05 pb
+     Nb of events :  50000
+     Pythia8 merged cross-sections are:
+      > Merging scale = 45     : 0.0050867   +/- 8.1e-06 [pb]
+      > Merging scale = 67.5   : 0.0050218   +/- 8e-06   [pb]
+      > Merging scale = 90     : 0.0049446   +/- 8e-06   [pb]
+     Notice that because Systematics computation is turned on, the merging did not veto events but modified their weights instead.
+     The resulting hepmc/stdhep file should therefore be use with those weights.
+ 
+INFO: storing files of previous run 
+INFO: Storing Pythia8 files of previous run 
+INFO: Done 
+quit
+INFO:  
+ 
+INFO:  
+ 
+more information in /local/scratch/tuZsamples/tuZ_production_tzj/index.html
+quit
+ 
+
+ 
+
