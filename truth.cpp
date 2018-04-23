@@ -56,7 +56,7 @@ double get_weight(TBranch* branchE, int iEvent);
 int get_highestpt_particle(TClonesArray* TCP,int iPID);
 bool is_uc(int i){i = abs(i);if (i == 2 || i == 4){return true;}else return false;}
 bool is_ucg(int i){i = abs(i);if (i == 2 || i == 4 || i == 21 || i == 9){return true;}else return false;}
-bool is_lep(int i){i = abs(i);if (i == 11 || i == 13){return true;}else return false;}
+bool is_lep(int i){i = abs(i);if (i > 10 && i < 17){return true;}else return false;}
 
 
 int error=0;

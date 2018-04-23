@@ -34,7 +34,7 @@ decay_fraction=0.5
 for par in part:
 	for var in vari:
 		para = parameters_kin("dec", var, par)
-		lower_range=para[0];upper_range=para[1];nbin=para[2];up_l=para[3]
+		lower_range=para[0];upper_range=para[1];nbin=para[2];up_l=para[3];ylimup=para[4];ylimdown=para[5];ylog=para[6]
 
 		evi = np.genfromtxt("data/"+"int"+"_"+par+"_"+var+"_truth.txt")
 		evd = np.genfromtxt("data/"+"dec"+"_"+par+"_"+var+"_truth.txt")
@@ -114,8 +114,9 @@ for par in part:
 		ax2.set_xlim(lower_range,upper_range)
 		ax2.set_ylim(0.5,2)
 
-		ax1.set_yscale("log")
-		ax1.set_ylim(1e-4,1.2)
+		if ylog==1:
+			ax1.set_yscale("log")
+			ax1.set_ylim(ylimdown,ylimup)
 
 
 		labelkinax(ax1,ax2,var,par)

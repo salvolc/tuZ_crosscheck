@@ -13,9 +13,11 @@ from ROOT import TMath as tm
 def parameters_kin(sam,var,par):
 	topmassup=185
 	topmassdown=165
-	bmassup=5.2
-	bmassdown=3.2
-	umassup=1
+	zmassup=110
+	zmassdown=70
+	bmassup=5
+	bmassdown=3
+	umassup=2
 	umassdown=0
 	wmassup=95
 	wmassdown=70
@@ -24,12 +26,15 @@ def parameters_kin(sam,var,par):
 	default_range_down=0
 	default_nbins = 64
 
-	mass_nbins = 64
+	mass_nbins =40
 
-	nbin = default_nbins
-	lower_range=default_range_down
-	upper_range=default_range_up
-	up_l = 0.1
+	nbin 		= 	default_nbins
+	lower_range	=	default_range_down
+	upper_range	=	default_range_up
+	yup			=	1.2
+	ydown		=	1e-4
+	ylog		=	1
+	up_l 		= 	0.001
 	if var=="PT":
 		if par == "Z":
 			up_l=0.1
@@ -53,17 +58,29 @@ def parameters_kin(sam,var,par):
 			upper_range=250
 			lower_range=0
 			nbin=10
-	if (var == "Eta" or var == "Phi"):
-		lower_range=-5
-		upper_range=5
-		nbin = 32
+	if var == "Phi":
+		lower_range=-4.2
+		upper_range=4.2
+		nbin = 10
 		up_l = 0
+	if var == "Eta":
+		lower_range=-2.5
+		upper_range=2.5
+		nbin=10
+		up_l = 0
+
 	if(var=="M"):
-		nbin=mass_nbins
+		nbin = mass_nbins
 		up_l = 0
+		ylog = 0
+		yup = 0
+		ydown = 0
 		if("W" in par):
 			lower_range=wmassdown
 			upper_range=wmassup
+		if("Z" in par):
+			lower_range=zmassdown
+			upper_range=zmassup
 		if("Top" in par):
 			lower_range=topmassdown
 			upper_range=topmassup
@@ -73,7 +90,7 @@ def parameters_kin(sam,var,par):
 		if("UQuark" in par):
 			lower_range=umassdown
 			upper_range=umassup
-	return [lower_range,upper_range,nbin,up_l]
+	return [lower_range,upper_range,nbin,up_l,yup,ydown,ylog]
 
 def parameters_RM(p1,p2,va):
 	up_l=0
